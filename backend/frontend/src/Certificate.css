@@ -1,0 +1,25 @@
+.certificate-page {
+  text-align: center;
+  padding: 40px;
+}
+
+.certificate-page input {
+  padding: 10px;
+  margin: 10px;
+  width: 250px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.certificate-page button {
+  padding: 10px 20px;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.certificate-page button:hover {
+  background: #357ab8;
+}

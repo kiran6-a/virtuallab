@@ -1,0 +1,50 @@
+.about-page {
+  padding: 40px;
+  text-align: center;
+  background: linear-gradient(to bottom, #003566, #001d3d);
+  color: white;
+  min-height: 100vh;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #ffd60a;
+}
+
+.about-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-section {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  text-align: left;
+}
+
+.about-section h3 {
+  color: #ffdd00;
+  margin-bottom: 10px;
+}
+
+.about-section p {
+  margin: 8px 0;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.about-section a {
+  color: #ffd60a;
+  text-decoration: none;
+}
+
+.about-section a:hover {
+  text-decoration: underline;
+}

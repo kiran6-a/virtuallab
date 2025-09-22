@@ -1,0 +1,48 @@
+.help-page {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.help-title {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #4a90e2;
+  margin-bottom: 10px;
+}
+
+.help-subtitle {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.help-section {
+  margin-bottom: 25px;
+  padding: 18px;
+  border-left: 5px solid #4a90e2;
+  background: #f9f9ff;
+  border-radius: 8px;
+}
+
+.help-section h3 {
+  color: #ff5e62;
+  margin-bottom: 8px;
+  font-size: 1.3rem;
+}
+
+.help-section p,
+.help-section ul {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #222;
+}
+
+.help-section ul {
+  margin-left: 20px;
+  list-style: disc;
+}

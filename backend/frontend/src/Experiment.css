@@ -1,0 +1,112 @@
+/* 🌐 General Experiment Layout */
+.experiment-card {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* Title */
+.experiment-title {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #ff5e62;
+}
+
+/* Controls area (inputs, sliders etc.) */
+.experiment-controls {
+  margin: 15px 0;
+  padding: 15px;
+  background: #f4f7fa;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+/* Labels & Inputs */
+.experiment-controls label {
+  display: block;
+  margin: 0;
+  font-weight: 500;
+}
+.experiment-controls input[type="range"],
+.experiment-controls input[type="number"],
+.experiment-controls input[type="text"] {
+  width: 100%;
+  margin-top: 6px;
+}
+
+/* Centered block for formulas, results and show/hide button */
+.experiment-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;     /* center horizontally */
+  justify-content: center;
+  text-align: center;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+/* Results (range, height, time) - centered */
+.experiment-results {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.95rem;
+}
+
+/* 📘 Formula & Theory box (centered on page) */
+.theory-box {
+  margin: 0 auto;           /* center horizontally */
+  max-width: 740px;
+  padding: 12px;
+  border-radius: 8px;
+  background: #fff8dc;
+  border: 1px solid #e0c97f;
+  font-size: 0.95rem;
+  text-align: left;         /* keep text readable; box itself is centered */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+}
+
+/* 🎛️ Uniform buttons (centered when inside .experiment-info) */
+.experiment-controls button,
+.experiment-info > button,
+.theory-box button {
+  margin-top: 6px;
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: none;
+  background: #4a90e2;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.08s;
+  align-self: center; /* center button inside flex column */
+}
+
+.experiment-controls button:hover,
+.experiment-info > button:hover,
+.theory-box button:hover {
+  background: #357ab8;
+  transform: translateY(-1px);
+}
+
+/* Small responsiveness */
+@media (max-width: 640px) {
+  .experiment-card {
+    margin: 20px;
+    padding: 16px;
+  }
+
+  .theory-box {
+    max-width: 100%;
+    padding: 10px;
+  }
+}
