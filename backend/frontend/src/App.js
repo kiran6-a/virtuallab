@@ -12,6 +12,11 @@ import About from "./About";
 import Quiz from "./Quiz";
 import Certificate from "./Certificate";
 
+// Authentication
+import Login from "./Login";
+import Register from "./Register";
+import Profile from "./Profile";
+
 // Experiments
 import Projectile3D from "./Projectile3D";
 import Pendulum3D from "./Pendulum3D";
@@ -24,6 +29,11 @@ export default function App() {
     <Router>
       <Navbar />
       <Routes>
+        {/* Authentication Pages */}
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/profile" element={<Profile />} />
+
         {/* Public Pages */}
         <Route path="/home" element={<Home />} />
         <Route path="/qa" element={<QA />} />

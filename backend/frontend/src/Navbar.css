@@ -37,3 +37,94 @@
 .nav-link:hover {
   color: #ffd700;
 }
+
+/* Authentication section */
+.auth-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.user-welcome {
+  color: #ffd700;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.logout-btn {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.logout-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffd700;
+  border-color: #ffd700;
+}
+
+.login-link, .register-link, .profile-link {
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.login-link:hover, .register-link:hover, .profile-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.profile-link {
+  background: rgba(102, 126, 234, 0.2);
+  border: 1px solid #667eea;
+}
+
+.profile-link:hover {
+  background: rgba(102, 126, 234, 0.3);
+}
+
+.register-link {
+  background: rgba(255, 215, 0, 0.2);
+  border: 1px solid #ffd700;
+}
+
+.register-link:hover {
+  background: rgba(255, 215, 0, 0.3);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+  
+  .nav-right {
+    gap: 10px;
+  }
+  
+  .nav-link {
+    font-size: 14px;
+  }
+  
+  .auth-section {
+    gap: 10px;
+    margin-left: 10px;
+    padding-left: 10px;
+  }
+  
+  .user-welcome {
+    display: none; /* Hide on mobile for space */
+  }
+  
+  .profile-link {
+    font-size: 13px;
+    padding: 4px 8px;
+  }
+}
